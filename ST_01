@@ -1,0 +1,4 @@
+num_tex_comp23 = i.replace(".geo", '')
+pattern5 = re.compile('([^0]*$)') #до нуля с обр.
+hdaFileNameee = re.search(pattern5, num_tex_comp23).group(1)
+num_tex_comp24 = num_tex_comp23.replace(hdaFileNameee, '')
